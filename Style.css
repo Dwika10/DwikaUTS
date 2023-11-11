@@ -1,91 +1,218 @@
+
 body {
+    font-family: 'Helvetica', sans-serif; 
     margin: 0;
     padding: 0;
-    background: url('d:\PROMNET\UTS\DWIKAA.jpg') left bottom no-repeat; 
-    background-size: cover;
+}
+
+header {
+    color: black;
+    text-align: left;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    margin: 20px 10px;
+    text-align: left;
+    display: flex;
+}
+
+.left a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px;}
+
+.left a:hover {
+    text-decoration: none;}
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px; 
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 10px; 
+    text-align: left; 
+}
+
+.home-background {
+    background-image: url('d:\PROMNET\UTS\DWIKAA.jpg');
+    background-size: cover; 
     height: 100vh;
 }
 
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
 
-.container {
+.home-content h1 {
+    font-size: 36px;
+    text-align: left;
+}
+
+.home-content p {
+    font-size: 18px;
+    text-align: left;
+  
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.about-section {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.right-btn {
+    margin-left: auto;
+    display: block;
+}
+.about-points {
+    list-style: none; 
+    padding: 0;
+}
+
+.about-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.about-paragraph {
+    font-size: 16px;
+    text-align: left;
+}
+
+.button-container {
+    text-align: right;
+}
+
+.right-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    margin-left: 10px;
+}
+
+.work-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.work-item {
+    flex: 1;
+}
+
+.work-item img {
+     width: 100%;
+}
+    
+.work-gallery {
     display: flex;
     justify-content: flex-end;
 }
 
-.content {
-    flex: 1;
-    padding: 20px;
+.work-item {
+    margin-left: 10px; 
 }
 
-.sidebar {
-    width: 200px;
-    background-color: white;
-    color: gray;
+.work-item:last-child {
+    margin-right: 0; 
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+
+.contact-content {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.sidebar ul li {
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.social-icon img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input input,
+.form-input textarea {
+    width: 100%;
     padding: 10px;
-    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.sidebar ul li a {
-    text-decoration: none;
-    color: gray;
-}
-
-.section {
-    display: none;
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-}
-.image-container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 10px;
-  }
-  .resume-button {
-    display: block;
-    margin-top: 20px;
+#contact-form button {
+    background-color: darkgray;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  .centered-text {
-    text-align: center;
-    position: relative;
-}
-
-.centered-text::after {
-    content: "\2193"; 
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-h1.{
-    color: gray;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
 }
